@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import App, { CharacterComponent } from './App';
+import App, { CharacterComponent } from './Components/App';
 
 test('renders Dropdown to select characters', () => {
   render(<App />)

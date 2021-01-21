@@ -36,7 +36,7 @@ export const CharacterComponent = ({ moviesList, dispatch }) => {
   const getMovieNamesByCharacter = async (e) => {
     setLoading(true)
     setSelectedCharacter(e.target.value)
-    const characterIndex = characters.findIndex(x => x.name == e.target.value)
+    const characterIndex = characters.findIndex(x => x.name === e.target.value)
     try {
       //fetches the list of movies the selected character is available
       const { data } = await axios.get(`https://swapi.dev/api/people/${characterIndex}/`)
